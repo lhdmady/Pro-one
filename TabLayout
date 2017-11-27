@@ -1,0 +1,17 @@
+xml样式
+tabBackground         背景颜色（color）
+tabContentStart       偏移量（dimension）   mode设置scrollable
+tabGravity            对齐方式（dimension）
+tabIndicatorColor     指示器颜色
+tabIndicatorHeight    指示器高度
+tabMaxWidth           最大宽度
+tabMinWidth           最小宽度
+tabMode               显示模式 fixed,scrollable            
+tabPadding            标签距离
+tabPaddingBottom      标签下间距
+tabPaddingEnd         标签右间距
+tabPaddingStart       标签左间距
+tabPaddingTop         标签上间距
+tabSelectedTextColor  选中文字颜色
+tabTextAppearance     文字样式
+tabTextColor          文字颜色
