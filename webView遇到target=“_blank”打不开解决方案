@@ -1,0 +1,32 @@
+private Activity activity;
+
+webView.getSettings().setSupportMultipleWindows(true);//设置多窗口
+
+webView.setWebChromeClient(new WebChromeClient() {
+               
+                /**
+                 * 当网页里a标签target="_blank"，打开新窗口时调用
+                 */
+                @Override
+                public boolean onCreateWindow(WebView webView, boolean isDialog, boolean isUserGesture, Message resultMsg) {
+                    WebView newWebView = new WebView(activity);
+                    webView.addView(newWebView);
+                    WebView.WebViewTransport transport = (WebView.WebViewTransport) resultMsg.obj;
+                    transport.setWebView(newWebView);
+                    resultMsg.sendToTarget();
+                    newWebView.setWebViewClient(new WebViewClient() {
+                        @Override
+                        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                            if (activity != null) {
+                                //拦截url，跳转新窗口
+                                Intent intent = new Intent(activity, WebActivity.class);
+                                intent.putExtra("url", url);
+                                activity.startActivity(intent);
+                            }
+                            return true;
+                        }
+                    });
+
+                    return true;
+                }
+            });
