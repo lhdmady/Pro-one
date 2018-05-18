@@ -30,3 +30,32 @@ webView.setWebChromeClient(new WebChromeClient() {
                     return true;
                 }
             });
+            
+/**
+* webview 加载html 将a标签target重置为 _blank 
+* 此方法在WebViewClient中的onPageFinished(WebView webView, String s)调用
+*/
+private void addLinkClickListener() {
+        this.loadUrl("javascript: " +
+                "var allLinks = document.getElementsByTagName('a'); " +
+                "if (allLinks) {" +
+                "   var i;" +
+                "   for (i=0; i<allLinks.length; i++) {" +
+                "       var link = allLinks[i];" +
+                "       var target = link.getAttribute('target'); " +
+                "       if (target || target != '_blank') {" +
+                "           link.setAttribute('target','_blank');" +
+                "       }" +
+                "   }" +
+                "}");
+        /*this.loadUrl("javascript:(function(){" +
+                "var objs = document.getElementsByTagName(\"a\"); " +
+                "for(var i=0;i<objs.length;i++)  " +
+                "{"
+                + "    objs[i].onclick=function()  " +
+                "    {  "
+                + "        window.clickListener.openLink(this.href);  " +
+                "    }  " +
+                "}" +
+                "})()");*/
+    }
