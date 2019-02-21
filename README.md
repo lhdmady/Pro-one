@@ -3,6 +3,9 @@
 # WebSocket jar
 https://mvnrepository.com/artifact/org.java-websocket/Java-WebSocket
 
+# 美国apple id 网址
+http://www.apid.info/
+
 # WebView各种属性详解
 https://blog.csdn.net/cgq1030699125/article/details/52637774
 
