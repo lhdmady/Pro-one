@@ -46,10 +46,8 @@ public class CircleTransform extends BitmapTransformation {
         }
         paint.setShader(shader);
         paint.setAntiAlias(true);
-
         float r = size / 2f;
         canvas.drawCircle(r, r, r, paint);
-
         return bitmap;
     }
 
