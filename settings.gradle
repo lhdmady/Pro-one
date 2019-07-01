@@ -1,0 +1,1 @@
+include ':app', ':hvAlbum', ':hvBanner', ':hvBottomBar', ':hvSwitchButton', ':hvUtils', ':hvThirdPart', ':hvCameraView', ':hvNet'
