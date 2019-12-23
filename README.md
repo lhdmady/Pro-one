@@ -45,3 +45,34 @@ https://github.com/mikepenz/Android-Iconics
 10. 天天云搜 -网盘搜索神器，提供百度云搜索引擎入口，是针对百度网盘专门优化的搜索引擎，提供免费的网盘资源下载服务，本身不会存储任何资源，她可以让你更加方便地找到你想要的资源，所有资源无需注册回复即可免费下载。  http://www.daysou.com/
 
 11. 小不点搜索，小不点搜索，,专注于百度网盘提取密码搜索嗅探，让资源搜索更准确有效。  https://www.xiaoso.net/
+
+# AS抽风
+No IDEA annotations attached to the JDK 1.8 (C:\Program Files\Android\Android Studio\jre), some issues will not be found
+
+Default Activity not found
+
+1.Close Android Studio
+
+2.Go to <code>C:\Users\UserName\.android</code> and rename the <code>build-cache folder</code> to <code>build-cache.bak</code>
+
+3.Go to <code>C:\Users\UserName\.AndroidStudio3.2\system<code> and rename these folders
+  
+  <code>caches</code> to <code>caches.bak</code>
+  
+  <code>compile-server</code> to <code>compile-server.bak</code>
+  
+  <code>compiler</code> to <code>compiler.bak</code>
+  
+  <code>conversion</code> to <code>conversion.bak</code>
+  
+  <code>external_build_system</code> to <code>external_build_system.bak</code>
+  
+  <code>frameworks</code> to <code>frameworks.bak</code>
+  
+  <code>gradle</code> to <code>gradle.bak</code>
+  
+  <code>resource_folder_cache</code> to <code>resource_folder_cache.bak</code>
+  
+4.Open the Android Studio and open your project again.
+
+link:  https://stackoverflow.com/questions/50740240/no-idea-annotations-attached-to-the-jdk-1-8-c-some-issues-will-not-be-fo
