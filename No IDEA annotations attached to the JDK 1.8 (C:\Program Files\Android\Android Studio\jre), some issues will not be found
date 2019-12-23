@@ -1,0 +1,30 @@
+# No IDEA annotations attached to the JDK 1.8 (C:\Program Files\Android\Android Studio\jre), some issues will not be found
+# Default Activity not found
+
+Close Android Studio
+Go to C:\Users\UserName\.android and rename the build-cache folder to build-cache.bak
+Go to C:\Users\UserName\.AndroidStudio3.2\system and rename these folders
+
+caches to caches.bak
+
+compile-server to compile-server.bak
+
+compiler to compiler.bak
+
+conversion to conversion.bak
+
+external_build_system to external_build_system.bak
+
+frameworks to frameworks.bak
+
+gradle to gradle.bak
+
+resource_folder_cache to resource_folder_cache.bak
+
+Open the Android Studio and open your project again.
+
+1、关闭AS。
+2、3、到指定位置重命名文件，添加后缀.bak。
+4、重启AS，编译project。
+
+link: https://stackoverflow.com/questions/50740240/no-idea-annotations-attached-to-the-jdk-1-8-c-some-issues-will-not-be-fo
